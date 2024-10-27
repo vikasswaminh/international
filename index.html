@@ -577,62 +577,7 @@
 </section>
 
 
-    <!-- Contact Us Section -->
-<section id="contact-us" class="py-8 bg-white font-lato">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-2">Contact Us</h2>
-        <p class="text-lg text-gray-700 text-center mb-8">We're here to assist you with any questions or inquiries about our courses and services.</p>
-        
-        <p class="text-md text-gray-700 mb-4">At <strong>Networkers Home</strong>, we are committed to empowering your career through industry-leading training in networking, cybersecurity, and cloud technologies. Our dedicated team is here to help you every step of the way.</p>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <!-- Left: Address Information (30%) -->
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">Our Addresses</h3>
-                <p class="text-md text-gray-700 mb-2">🏢 India Training Campus: L-149, 1st, 2nd, 3rd Floor, Sector 6, HSR Layout, Bangalore-560102</p>
-                <p class="text-md text-gray-700 mb-4">🏢 Dubai Head Office: Building B, Al Saaha Offices, Souk Al Bahar Old Town Island, Burj Khalifa District - United Arab Emirates</p>
-            </div>
-
-            <!-- Center: Contact Information (40%) -->
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h3>
-                <h4 class="text-md font-semibold text-gray-900">Contact Information</h4>
-                <p class="text-red-600 hover:text-red-800">
-                    <a href="tel:+919611027980">📞 +91-9611027980</a>
-                </p>
-                <p class="text-gray-700">📧 info@networkershome.com</p>
-
-                <!-- WhatsApp Button -->
-                <div class="mt-4 text-center">
-                    <a href="https://wa.me/919611027980" target="_blank" class="inline-block bg-green-500 text-white font-semibold py-2 px-3 text-sm rounded-lg hover:bg-green-400 transition duration-200">💬 Chat on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Right: Google Map Section (30%) -->
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">Our Location</h3>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.883112483229!2d77.62954167454576!3d12.915233416112697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148cd1dba9cf%3A0x6908c0bcd3bc3460!2sNETWORKERS%20HOME-%20CCNA%2CCCNP%2C%20CCIE%20Training%20in%20Bangalore%2C%20India!5e0!3m2!1sen!2sin!4v1729527150743!5m2!1sen!2sin" 
-                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Additional Styles -->
-<style>
-    #contact-us {
-        background: linear-gradient(to right, #f8f9fa, #ffffff);
-    }
-    iframe {
-        border-radius: 0.5rem; /* Rounds the corners of the iframe */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-    }
-</style>
-
-
-
+  
   
 
 <!-- Footer Section -->
@@ -709,77 +654,97 @@
   </div>
 </footer>
 
-<!-- Side Popup Banner (Responsive Design) -->
-<div id="sidePopup" class="fixed right-0 bottom-10 hidden w-56 lg:w-64 bg-white shadow-lg rounded-lg p-3 z-50">
-    <!-- Clickable Call Section -->
-    <div class="flex justify-between items-center">
-        <a href="tel:+919611027980" class="text-sm font-bold text-red-600 hover:text-red-800">Call us: +91-9611027980</a>
-        <button onclick="closePopup()" class="text-gray-500 hover:text-gray-800">&times;</button>
+
+
+<!-- Full-width Schedule a Discussion Section with Image and Form -->
+<section class="w-full flex flex-col lg:flex-row bg-gray-100">
+  
+  <!-- Left Side Image (50%) -->
+  <div class="w-full lg:w-1/2">
+    <img src="images/schedule-discussion.jpg" alt="Schedule a Discussion" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Right Side Form (50%) -->
+  <div class="w-full lg:w-1/2 p-6 lg:p-12 bg-white flex items-center justify-center">
+    <div id="sidePopup" class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+      <!-- Header -->
+      <h2 class="text-lg font-bold text-gray-800 mb-4">Book a Free Consultation</h2>
+      
+      <!-- Consultation Form using Formspree -->
+      <form id="consultationForm" action="https://formspree.io/f/mjkvvnkn" method="POST">
+          
+          <!-- Name Field -->
+          <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+              <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your Name" required>
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your Email" required>
+          </div>
+
+          <!-- Phone Field -->
+          <div class="mb-4">
+              <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your Phone Number" required>
+          </div>
+
+          <!-- Country Field -->
+          <div class="mb-4">
+              <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+              <input type="text" id="country" name="country" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your Country" required>
+          </div>
+
+          <!-- City Field -->
+          <div class="mb-4">
+              <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+              <input type="text" id="city" name="city" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your City" required>
+          </div>
+
+          <!-- Time Zone Field -->
+          <div class="mb-4">
+              <label for="timezone" class="block text-sm font-medium text-gray-700">Time Zone</label>
+              <input type="text" id="timezone" name="timezone" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="e.g., PST, EST, CST" required>
+          </div>
+
+          <!-- Preferred Time Slot Field -->
+          <div class="mb-4">
+              <label for="timeSlot" class="block text-sm font-medium text-gray-700">Preferred Time Slot</label>
+              <select id="timeSlot" name="timeSlot" class="w-full p-2 border border-gray-300 rounded-lg text-sm" required>
+                  <option value="">Select a 15-minute slot</option>
+                  <option value="9:00 AM - 9:15 AM">9:00 AM - 9:15 AM</option>
+                  <option value="9:15 AM - 9:30 AM">9:15 AM - 9:30 AM</option>
+                  <option value="9:30 AM - 9:45 AM">9:30 AM - 9:45 AM</option>
+                  <option value="9:45 AM - 10:00 AM">9:45 AM - 10:00 AM</option>
+                  <!-- Additional time slots -->
+              </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-500 transition duration-200">Schedule Consultation</button>
+      </form>
     </div>
+  </div>
+</section>
 
-    <!-- Enquiry Form using Formspree -->
-    <form class="mt-3" id="enquiryForm" action="https://formspree.io/f/mjkvvnkn" method="POST">
-        <div class="mb-3">
-            <label for="name" class="block text-xs font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Name" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="phone" class="block text-xs font-medium text-gray-700">Phone Number</label>
-            <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Phone Number" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="block text-xs font-medium text-gray-700">Email</label>
-            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Email" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="course" class="block text-xs font-medium text-gray-700">Course Enquiry</label>
-            <textarea id="course" name="course" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Course Enquiry Details" rows="2" required></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 text-sm rounded-lg hover:bg-red-500 transition duration-200">Submit Enquiry</button>
-    </form>
-
-    <!-- WhatsApp Section -->
-    <div class="mt-3 text-center">
-        <a href="https://wa.me/919611027980" target="_blank" class="inline-block bg-green-500 text-white font-semibold py-2 px-4 text-sm rounded-lg hover:bg-green-400 transition duration-200">WhatsApp Us</a>
-    </div>
-</div>
-
-<!-- Popup Styles and Script -->
+<!-- Styles and JavaScript for Popup Display and Form Submission -->
 <style>
-    /* Responsive adjustment for mobile */
-    @media (max-width: 768px) {
-        #sidePopup {
-            width: 100%;
-            right: 0;
-            bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Ensure text fits well on smaller screens */
-        #sidePopup input, #sidePopup textarea, #sidePopup button {
-            font-size: 0.875rem;
-        }
+    /* Responsive adjustments for full-width display */
+    #sidePopup input, #sidePopup select, #sidePopup button {
+        font-size: 0.875rem;
     }
 </style>
 
 <script>
-    // Show popup after 5 seconds
-    setTimeout(function() {
-        document.getElementById('sidePopup').classList.remove('hidden');
-    }, 5000);
-
     // Close the popup
     function closePopup() {
         document.getElementById('sidePopup').classList.add('hidden');
     }
 
     // Formspree form submission
-    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+    document.getElementById('consultationForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
         // Create FormData object from the form
@@ -790,13 +755,13 @@
             method: 'POST',
             body: formData,
             headers: {
-                'Accept': 'application/json' // Optional
+                'Accept': 'application/json'
             }
         })
         .then(response => {
             if (response.ok) {
-                alert('Thank you for your enquiry! We will contact you soon.');
-                closePopup(); // Close the popup after successful submission
+                alert('Thank you for scheduling a consultation! We will contact you soon.');
+                closePopup();
             } else {
                 alert('Oops! There was a problem with your submission. Please try again later.');
             }
@@ -807,54 +772,6 @@
         });
     });
 </script>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delayed Popup for Free Placement Opportunities</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 font-sans antialiased">
-
-    <!-- Unique Popup Banner for Free Placement Opportunities -->
-    <div id="unique-popup-banner" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" style="display: none;">
-        <div class="bg-white rounded-lg shadow-lg max-w-lg p-6 text-center relative">
-            <button onclick="closeUniquePopup()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 focus:outline-none">&times;</button>
-            <h2 class="text-2xl font-bold text-blue-700 mb-3">🚀 Free Placement Assistance!</h2>
-            <p class="text-gray-800 mb-4">
-                🎓 Already hold <strong>Cisco/DevOps/Cloud/Cybersecurity certifications</strong> but struggling to find a job? If you've studied elsewhere, <span class="text-blue-600 font-semibold">we’ll connect you to top MNC Networking jobs!</span> 🌍
-            </p>
-            
-            <!-- Primary CTA Button directing to placements page with target="_blank" -->
-            <a href="/placements-networkershome" target="_blank" class="inline-block mt-4 bg-blue-600 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition">
-                Get Started
-            </a>
-
-            <!-- Secondary "Find Out More" Button directing to placements page -->
-            <a href="/placements-networkershome" target="_blank" class="inline-block mt-4 bg-gray-200 text-blue-700 font-bold py-2 px-4 rounded-full hover:bg-gray-300 transition">
-                Find Out More
-            </a>
-        </div>
-    </div>
-
-    <!-- JavaScript for Delayed Popup Logic -->
-    <script>
-        function closeUniquePopup() {
-            document.getElementById('unique-popup-banner').style.display = 'none';
-        }
-
-        window.onload = function() {
-            setTimeout(function() {
-                // Show popup if no other popups are active
-                if (!document.querySelector('.other-popup-class, #other-popup-id')) {
-                    document.getElementById('unique-popup-banner').style.display = 'flex';
-                }
-            }, 120000); // Show after 120 seconds (120,000 milliseconds)
-        }
-    </script>
 
 </body>
 </html>
