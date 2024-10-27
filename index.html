@@ -576,12 +576,13 @@
   </div>
 </section>
 
+
 <!-- Full-width Schedule a Discussion Section with Image and Form -->
 <section class="w-full flex flex-col lg:flex-row bg-gray-100 border-t-4 border-blue-600">
   
   <!-- Left Side Image (50%) with Border -->
   <div class="w-full lg:w-1/2 border-r-4 border-blue-600">
-    <img src="images/slide7.webp" alt="Schedule a Discussion" class="w-full h-full object-cover border-blue-600 border">
+    <img src="images/schedule-discussion.jpg" alt="Schedule a Discussion" class="w-full h-full object-cover border-blue-600 border">
   </div>
 
   <!-- Right Side Form (50%) with Border -->
@@ -591,7 +592,7 @@
       <h2 class="text-lg font-bold text-gray-800 mb-4">Book a Free Consultation</h2>
       
       <!-- Consultation Form using Formspree -->
-      <form id="consultationForm" action="https://formspree.io/f/mjkvvnkn" method="POST">
+      <form id="consultationForm" action="https://formspree.io/f/mnnqjvjr" method="POST">
           
           <!-- Name Field -->
           <div class="mb-4">
@@ -629,6 +630,12 @@
               <input type="text" id="timeSlot" name="timeSlot" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Enter preferred time" required>
           </div>
 
+          <!-- Course Details Field -->
+          <div class="mb-4">
+              <label for="courseDetails" class="block text-sm font-medium text-gray-700">Course Details</label>
+              <textarea id="courseDetails" name="courseDetails" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Course name, any other details" rows="2" required></textarea>
+          </div>
+
           <!-- Submit Button -->
           <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-500 transition duration-200">Schedule Consultation</button>
       </form>
@@ -639,7 +646,7 @@
 <!-- Styles and JavaScript for Popup Display and Form Submission -->
 <style>
     /* Responsive adjustments for full-width display */
-    #sidePopup input, #sidePopup select, #sidePopup button {
+    #sidePopup input, #sidePopup textarea, #sidePopup button {
         font-size: 0.875rem;
     }
 </style>
@@ -680,9 +687,8 @@
     });
 </script>
 
-  
-  
 
+  
 <!-- Footer Section -->
 <footer class="bg-white text-gray-900 py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
