@@ -624,10 +624,12 @@
               <input type="text" id="city" name="city" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Your City" required>
           </div>
 
-          <!-- Time Slot Field (User Input) -->
+          <!-- Preferred Time and Time Zone Fields -->
           <div class="mb-4">
               <label for="timeSlot" class="block text-sm font-medium text-gray-700">Preferred Time for Consultation</label>
-              <input type="text" id="timeSlot" name="timeSlot" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="Enter preferred time" required>
+              <input type="text" id="timeSlot" name="timeSlot" class="w-full p-2 border border-gray-300 rounded-lg text-sm mb-2" placeholder="Enter preferred time (e.g., 10:00 AM)" required>
+              <label for="timeZone" class="block text-sm font-medium text-gray-700">Time Zone</label>
+              <input type="text" id="timeZone" name="timeZone" class="w-full p-2 border border-gray-300 rounded-lg text-sm" placeholder="e.g., PST, EST, CST" required>
           </div>
 
           <!-- Course Details Field -->
@@ -686,7 +688,6 @@
         });
     });
 </script>
-
 
   
 <!-- Footer Section -->
